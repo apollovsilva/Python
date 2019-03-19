@@ -1,43 +1,45 @@
-print('Cacular tempo médio por milha')
+print('Se você fizer uma corrida de 10 quilômetros em 43 minutos e 30 segundos, qual será seu tempo médio por milha? Qual é a sua velocidade média em milhas por hora? (Dica: há 1,61 quilômetros em uma milha).')
 
-print('Conversão km para milha')
+print('Caculando o tempo médio por milha')
 
-y = float(input('valor de y: '))
+print('Conversão de Km para milha')
+
+y = float(input('Digite o valor da distância percorrida (em Km): '))
 
 x = y/1.61
 
-print(x)
+print('Distância em milhas: ', x)
 
-print('Conversão min para hora')
+print('Conversão de min para hora')
 
-min =float (input('colocar valor em minuto: '))
+min =float (input('Digite o valor em minutos: '))
 
 t1 = min/60
 
-print(t1)
+print('Tempo em hora: ', t1)
 
-print('Conversão seg para hora')
+print('Conversão de seg para hora')
 
-seg = float (input('colocar valor em segundos: '))
+seg = float (input('Digite o valor em segundos: '))
 
 t2 = seg/3600
 
 print(t2)
 
-print('tempo em horas')
+print('Tempo em horas', t2)
 
 h = t1 + t2
 
-print('h = ',h)
+print('Logo o tempo total será: ', h)
 
-print('cálculo tempo por milha')
+print('Agora o tempo por milha')
 
 tempmil = h/x
 
-print('tempmil = ', tempmil)
+print('Tempo por milha: ', tempmil)
 
-print('cáculo da velocidade em milhas por hora')
+print('Cáculo da velocidade em milhas por hora')
 
 v = x/h
 
-print('v = ', v)
+print('vel em milhas por hora: ', v)
