@@ -73,3 +73,7 @@ bob.speed(0)
 
 flower(bob, 7, 60.0, 60.0)
 talo(bob)
+
+#Para salvar o desenho da tela num arquivo .ps   
+tc= turtle.Screen().getcanvas()
+tc.postscript(file="flores.ps")
