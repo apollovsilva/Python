@@ -45,7 +45,7 @@ def move(t, length):
     t.fd(length)
     t.pd()
 
-#desenhando o talo
+#desenhando o talo e folha
 
 def talo(t):
     t.pensize(3)
