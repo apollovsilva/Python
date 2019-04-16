@@ -37,13 +37,13 @@ def flower(t, n, r, angle):
         t.lt(360.0/n)
 
 
-def move(t, length):
-    """Move Turtle (t) forward (length) units without leaving a trail.
-    Leaves the pen down.
-    """
-    t.pu()
-    t.fd(length)
-    t.pd()
+#def move(t, length):
+ #   """Move Turtle (t) forward (length) units without leaving a trail.
+  #  Leaves the pen down.
+   # """
+    #t.pu()
+    #t.fd(length)
+    #t.pd()
 
 #desenhando o talo e folha
 
@@ -63,7 +63,6 @@ def talo(t):
     t.end_fill()
     
     
-#desenhando a folha
     
     
     
@@ -72,7 +71,5 @@ bob = turtle.Turtle()
 #bob.color("green")
 bob.speed(0)
 
-# draw a sequence of three flowers, as shown in the book.
-#move(bob, -100)
 flower(bob, 7, 60.0, 60.0)
 talo(bob)
