@@ -15,7 +15,7 @@ class Ponto:
         return "({0}, {1})".format(self.x, self.y)
 
     def reflexao_x(self):
-        return Ponto(- self.x, self.y)
+        return Ponto(self.x, -self.y)
 
 p = Ponto()
 q = Ponto()
