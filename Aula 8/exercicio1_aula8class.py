@@ -10,10 +10,10 @@ class Ponto:
         return "({0}, {1})".format(self.x, self.y)
 
     def reflexao_x(self):
-        return Ponto(- self.x, self.y)
+        return Ponto(self.x, -self.y)
 
-    def inclinacao_da_origem(self, alvo):
-        m = (alvo.y - self.y)/(alvo.x - self.x)
+    def inclinacao_da_origem(self):
+        m = self.y/self.x)
         return m
 
     def parametros_reta(self, alvo):
@@ -42,8 +42,10 @@ q.y = float(input('Digite a coordenada y do ponto final: '))
 print('Ponto médio: ', ponto_medio(p, q))
 
 print('Refelxão da componente x do 1° ponto: ', p.reflexao_x())
-
-#print('Inclinação da origem para 1ª coordenada digitada: ', r.inclinacao_da_origem(p))
+print('Refelxão da componente x do 2° ponto: ', q.reflexao_x())
+print('Inclinação da reta, com relação a origem, para o 1º ponto: ', p.inclinacao_da_origem())
+print('Inclinação da reta, com relação a origem, para o 2ª ponto: ', q.inclinacao_da_origem())
+print('Parêmtros a e b para equação da reta: ', p.parametros_reta(q))
 
 #print('Inclinação da origem para 2ª coordenada digitada: ', r.inclinacao_da_origem(q))
 
@@ -53,12 +55,12 @@ print('Refelxão da componente x do 1° ponto: ', p.reflexao_x())
 
 #os dois últimos métodos falham se a tivermos uma função linear (b = 0) 
 
-if p.x == 0 and q.x == 0 :
-    print('Sua reta é uma reta vertical')
-elif p.x == 0 and p.y == 0:
-    a = q.y / q.x
-    print('Sua reta passa pela origem. O coeficiente angular é: ', a)
-else:
-    print('Inclinação da origem para 1ª coordenada digitada: ', r.inclinacao_da_origem(p))
-    print('Inclinação da origem para 2ª coordenada digitada: ', r.inclinacao_da_origem(q))
-    print('Parêmtros a e b para equação da reta: ', p.parametros_reta(q))
+#if p.x == 0 and q.x == 0 :
+#    print('Sua reta é uma reta vertical')
+#elif p.x == 0 and p.y == 0:
+#    a = q.y / q.x
+#    print('Sua reta passa pela origem. O coeficiente angular é: ', a)
+#else:
+#    print('Inclinação da origem para 1ª coordenada digitada: ', r.inclinacao_da_origem(p))
+#    print('Inclinação da origem para 2ª coordenada digitada: ', r.inclinacao_da_origem(q))
+#    print('Parêmtros a e b para equação da reta: ', p.parametros_reta(q))
