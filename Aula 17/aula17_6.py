@@ -1,4 +1,4 @@
-import math
+#import math
 from ponto import *
 
 class Circulo:
