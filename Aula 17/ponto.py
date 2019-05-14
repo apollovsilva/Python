@@ -7,6 +7,10 @@ class Ponto:
 
     def distancia_de_origem(self):
         return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+    
+    def distancia_dois_pontos(self, alvo):
+        """ Calcula a distancia entre dois pontos """
+        return (((self.x - alvo.x) ** 2) + ((self.y - alvo.y) ** 2)) ** 0.5
 
     def ponto_medio(self, alvo):
         mx = (self.x + alvo.x)/2
