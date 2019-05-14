@@ -3,8 +3,9 @@ from circulo import *
 
 def desenhar_circulo(t, circ):
     t.pu()
-    t.setx(circ.p.x)    # Define a coordenada x do cenro do circulo
-    t.sety(circ.p.y)    # Define a coordenada y do contro do circulo
+    #t.setx(circ.p.x)    # Define a coordenada x do cenro do circulo
+    #t.sety(circ.p.y)    # Define a coordenada y do contro do circulo
+    t.goto(circ.p.x, circ.p.y)
     t.fd(circ.r)        # Anda o valor do raio
     t.lt(90)
     t.pd()
