@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 d0 = 0       # distancia inicial
-d01 = -20      # distancia onde começa a acelerar
+d01 = 5      # distancia onde começa a acelerar
 d02 = 5.2    # distancia onde termina de acelerar 
 dfin = 7     # distancia final
 
@@ -9,13 +9,13 @@ v1 = 12      # velocidade inicial (para começar a celerar)
 v2 = 15      # velocidade obtida ao fim da aceleração
 a = 202.5    # aceleração
 
-t1 = [i for i in range(0,25)]        # tempo em minutos para o primeiro trecho
-t2 = [i for i in range(25,60)]       # tempo em minutos para o segundo trecho
-t3 = [i for i in range(60,100)]      # tempo em minutos para o trecho final
+t1 = [i for i in range(0,26)]        # tempo em minutos para o primeiro trecho
+t2 = [i for i in range(25,26)]       # tempo em minutos para o segundo trecho
+t3 = [i for i in range(26,55)]      # tempo em minutos para o trecho final
 
 
 d1 = [d0 + (v1/60)*ti for ti in t1]                       
-d2 = [d01 + (v1/60)*ti + (a/7200)*ti**2 for ti in t2]        
+d2 = [-12 + (v1/60)*ti + (a/7200)*ti**2 for ti in t2]        
 d3 = [70 + (v2/60)*ti for ti in t3]
 
 t = t1 + t2 + t3
