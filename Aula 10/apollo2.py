@@ -7,16 +7,21 @@ dfin = 7     # distancia final
 
 v1 = 12      # velocidade inicial (para começar a celerar)
 v2 = 15      # velocidade obtida ao fim da aceleração
-a = 202.5    # aceleração
+a = (v2**2 - v1**2)/(2**(d02 - d01))    # aceleração
 
-t1 = [i for i in range(0,26)]        # tempo em minutos para o primeiro trecho
-t2 = [i for i in range(25,26)]       # tempo em minutos para o segundo trecho
-t3 = [i for i in range(26,55)]      # tempo em minutos para o trecho final
+t1 = [i for i in range(0,60)]        # tempo em minutos para o primeiro trecho
+#t2 = [i for i in range(25,26)]       # tempo em minutos para o segundo trecho
+#t3 = [i for i in range(26,55)]      # tempo em minutos para o trecho final
 
-
+d = [0,8,0.2]
 d1 = [d0 + (v1/60)*ti for ti in t1]                       
 d2 = [-12 + (v1/60)*ti + (a/7200)*ti**2 for ti in t2]        
 d3 = [70 + (v2/60)*ti for ti in t3]
+
+for i in t1:
+  if 
+  site 
+https://stackoverflow.com/questions/477486/how-to-use-a-decimal-range-step-value
 
 t = t1 + t2 + t3
 d = d1 + d2 + d3
